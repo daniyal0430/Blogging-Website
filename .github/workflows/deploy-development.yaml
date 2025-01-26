@@ -19,7 +19,7 @@ jobs:
           name: "develop-artifact"
   
   develop-deploy:
-    needs: "develop-build-job"
+    needs: "develop-build"
     environment: "development-env"
     permissions:
       pages: write
